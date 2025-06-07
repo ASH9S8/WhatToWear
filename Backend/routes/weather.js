@@ -4,7 +4,6 @@ const router = express.Router();
 require('dotenv').config();
 
 const API_KEY = process.env.OPENWEATHER_API_KEY;
-//const API_KEY = 266d1c223a749058b7bf5fdfee1a7583;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 // Clothing advice logic
@@ -23,9 +22,8 @@ router.get('/weather', async (req, res) => {
     try {
         const response = await fetch(`${BASE_URL}?q=${encodeURIComponent(city)}&appid=${API_KEY}&units=metric`);
         console.log(API_KEY);
-        // console.log(${API_KEY});
+    
 
-        //const response = await fetch(`${BASE_URL}?q=${encodeURIComponent(city)}&appid=266d1c223a749058b7bf5fdfee1a7583&units=metric`);
 
         const data = await response.json();
 
