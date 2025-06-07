@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Clothing Suggestion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="toSignup">Sign Up</a></p>
+            </div>
+            <div class="signup-form">
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <input type="email" id="signupEmail" placeholder="Email" required>
+                    <input type="password" id="signupPassword" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="#" id="toLogin">Login</a></p>
+            </div>
+        </div>
+        <div class="weather-section" style="display: none;">
+            <h1>Weather & Clothing Suggestion</h1>
+            <input type="text" id="city" placeholder="Enter city name">
+            <button id="getWeatherBtn">Get Suggestion</button>
+            <div id="weatherInfo"></div>
+            <div id="clothingAdvice"></div>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
